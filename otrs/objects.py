@@ -158,6 +158,8 @@ def autocast(s):
             return float(s)
         except ValueError:
             return s
+    except TypeError:
+        return s
 
 
 class Attachment(OTRSObject):
